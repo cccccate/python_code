@@ -5,5 +5,12 @@
 
 # python知识点查漏补缺
 
-异常处理
+异常处理try，except
 ---
+```
+#异常处理：先尝试导入cPickle，如果失败，再导入pickle
+try:
+  import cPickle as pickle
+except ImportError:
+  import pickle
+```
